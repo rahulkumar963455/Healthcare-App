@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D4B99"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="@dimen/_4mdp"
+        android:text="24*7 HealthCare"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/_25font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bookappointmentBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Book Appointment"
+        android:textColor="#ffff"
+        android:textSize="@dimen/_20font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edt_reg_fullname"
+        android:layout_width="@dimen/_280mdp"
+        android:layout_height="@dimen/_45mdp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Full Name"
+        android:drawablePadding="@dimen/_10mdp"
+        android:padding="@dimen/_8mdp"
+        android:textColor="#ffff"
+        android:textColorHint="#fff"
+        android:textSize="@dimen/_20font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookappointmentBA" />
+
+    <EditText
+        android:id="@+id/edt_address_BA"
+        android:layout_width="@dimen/_280mdp"
+        android:layout_height="@dimen/_45mdp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:hint="Address"
+        android:padding="@dimen/_8mdp"
+        android:textColor="#ffff"
+        android:textColorHint="#fff"
+        android:drawablePadding="@dimen/_10mdp"
+        android:textSize="@dimen/_20font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_fullname" />
+
+    <EditText
+        android:id="@+id/edt_contact_no_BA"
+        android:layout_width="@dimen/_280mdp"
+        android:layout_height="@dimen/_45mdp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="Contact Number"
+        android:drawablePadding="@dimen/_10mdp"
+        android:padding="@dimen/_8mdp"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:textSize="@dimen/_20font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_address_BA" />
+    <EditText
+        android:id="@+id/edt_fee_BA"
+        android:layout_width="@dimen/_280mdp"
+        android:layout_height="@dimen/_45mdp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Fees"
+        android:padding="@dimen/_8mdp"
+        android:drawablePadding="@dimen/_10mdp"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:textSize="@dimen/_20font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_contact_no_BA" />
+
+
+    <Button
+        android:id="@+id/btn_selectdate_BA"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:background="#3D4B99"
+        android:backgroundTint="#3D4B99"
+        android:text="Select date"
+        android:textColor="@color/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fee_BA" />
+
+    <TextView
+        android:id="@+id/txt_date_BA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="12/10/2024"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_selectdate_BA" />
+
+
+    <TextView
+        android:id="@+id/txt_time_BA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="12:05"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_selecttime_BA" />
+
+    <Button
+        android:id="@+id/btn_selecttime_BA"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="bold"
+        android:background="#3D4B99"
+        android:text="Select Time"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fee_BA" />
+    <Button
+        android:id="@+id/bookAppointmentBA"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:background="@drawable/text_bg"
+        android:backgroundTint="@color/purple"
+        android:padding="@dimen/_3mdp"
+        android:text="BookAppointment"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fee_BA" />
+
+    <Button
+        android:id="@+id/btn_back_BA"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text_bg"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookAppointmentBA" />
+</androidx.constraintlayout.widget.ConstraintLayout>

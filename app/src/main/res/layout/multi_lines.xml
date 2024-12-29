@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:padding="@dimen/_10mdp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_a"
+        android:textSize="16sp"
+        android:text="Text"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5mdp"
+        android:id="@+id/line_b"
+        android:textSize="14sp"
+        android:text="Text"
+        android:textColor="@color/yellow"
+        android:textStyle="italic"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/line_c"
+            android:textSize="12sp"
+            android:text="Text"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/line_d"
+            android:textSize="12sp"
+            android:text="Text"
+            android:textColor="@color/yellow"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:id="@+id/line_e"
+            android:textSize="12sp"
+            android:text="Text"
+            android:textColor="@color/yellow" />
+
+    </LinearLayout>
+</LinearLayout>
